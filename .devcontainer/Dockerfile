@@ -12,5 +12,9 @@ FROM node:lts-alpine3.16
 # [Optional] Uncomment if you want to install more global node packages
 # RUN su node -c "npm install -g <your-package-list -here>"
 
+VOLUME
+
 RUN apt update
 RUN apt install -y git
+
+COPY ~/.gitconfig /root/.gitconfig
