@@ -4,5 +4,3 @@ WORKDIR /app
 
 RUN apt update
 RUN apt install -y git
-
-COPY ~/.gitconfig .gitconfig
