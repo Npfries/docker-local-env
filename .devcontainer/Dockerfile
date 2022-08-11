@@ -15,4 +15,4 @@ FROM node:lts-alpine3.16
 RUN apt update
 RUN apt install -y git
 
-COPY ~/.gitconfig /root/.gitconfig
+COPY ~/.gitconfig .gitconfig
